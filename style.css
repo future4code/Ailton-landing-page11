@@ -3,17 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container {
+
+header {
     display: grid;
     grid-template-rows: 10vh 80vh 10vh;
     grid-template-columns: repeat(3, 1fr);
 }
-img{
-height:50px;
-width: 50px;
-box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
-border-radius: 20px;
+
+header img {
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
 }
+
 header {
     background-color: orange;
     grid-column: 1 / -1;
@@ -22,33 +25,205 @@ header {
     justify-content: space-between;
     padding: 0 8px;
 }
-button{
+
+button {
     background-color: orange;
     border: transparent;
     width: 100px;
     font-family: 'Courier New', Courier, monospace;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     margin: 0;
-    padding: 0; 
-    display: flex;   
+    padding: 0;
+    display: flex;
 }
-a {
+
+nav a {
     display: flex;
     padding: 1em;
     text-decoration: none;
     color: black;
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
-    border-radius: 20px ;
+    border-radius: 20px;
 }
-:hover{
+
+header a:hover,
+header button:hover {
     color: white;
 }
 
+
+/* Main */
+main {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+main img {
+    transition: 0.7s;
+    width: 550px;
+}
+
+main img:hover {
+    transform: scale(1.02, 1.02);
+    transition: 0.7s;
+}
+
+main h2,
+h3 {
+    color: #FE6A06;
+    font-weight: bolder;
+    font-size: 42px;
+}
+
+main p {
+    font-size: 25px;
+    color: #000000;
+}
+
+main>div {
+    flex-wrap: wrap;
+}
+
+
+/* section 1 */
+.section-1 {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.section-1 img {
+    border-radius: 10px;
+}
+
+.section-1 div {
+    width: 40%;
+}
+
+.section-1,
+.texto {
+    margin-right: 100px;
+}
+
+
+/* section 2*/
+.section-2 {
+    max-width: 100%;
+    background-color: #E5E3E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+}
+
+.section-2 div {
+    width: 40%;
+}
+
+.section-2 img {
+    border-radius: 10px;
+}
+
+.section-2 .texto {
+    margin-left: 100px;
+}
+
+
+/* section 3 */
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+    height: 700px;
+}
+
+.section-3 img {
+    border-radius: 10px;
+}
+
+.section-3 div {
+    width: 40%;
+}
+
+.section-3,
+.texto {
+    margin-right: 100px;
+}
+
+.section-3 h3 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.section-3 p {
+    font-size: 25px;
+}
+
+
+/* section 4 */
+.section-4 {
+    height: 400px;
+    width: 100%;
+    background-image: url(imagens/pessoas-andando.jpg);
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 h3 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 3px 3px 4px #000000;
+}
+
+
+/* section 5 */
+.section-5 {
+    width: 100%;
+    background-color: #E5E3E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+    height: 700px;
+}
+
+.section-5 img {
+    border-radius: 10px;
+}
+
+.section-5 div {
+    width: 40%;
+}
+
+.section-5,
+.texto {
+    margin-right: 100px;
+}
+
+.section-5 .texto p {
+    color: black
+}
+
+
 /* Footer */
-img{
+img {
     max-width: 100%;
     width: 100px;
 }
