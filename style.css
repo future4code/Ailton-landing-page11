@@ -77,6 +77,7 @@ h3 {
     color: #FE6A06;
     font-weight: bolder;
     font-size: 42px;
+    text-shadow: 0.01px 0.01px 0.1px #111111;
 }
 
 main p {
@@ -339,7 +340,19 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
 
+
+.footer01 .icons {}
+
+.footer2 {
+    background-color: #000000;
+    max-width: 100%;
+}
+
+.footer2 p {
+    max-width: 100%;
+    text-align: center;
 }
 
 .footer-container {
@@ -473,6 +486,35 @@ footer {
     }
 
     .section-2 .texto h3 {
-        font: 27px;
+        padding-top: 10%;
+        font-size: min(20px);
+        width: 100%;
+        font-size: 40%;
+        font-size: max(32px);
     }
+
+    .section-1 .texto h2,
+    p {
+        width: 160%;
+    }
+
+    main h2,
+    h3 {
+        margin-block: 20px;
+    }
+
+    .section-2 .texto {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .section-3 img {
+        margin-top: max(-10%);
+        margin-top: min(-20%);
+    }
+
+    .footer2 {
+        max-width: 20px;
+    }
+
 }
