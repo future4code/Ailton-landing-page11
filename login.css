@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+
+}
+
+header {
+    background-color: orange;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    width: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: flex;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+}
+
+header a:hover,
+header button:hover {
+    color: white;
+}
+
+
+/* Main */
+main {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+main img {
+    transition: 0.7s;
+    width: 550px;
+}
+
+main img:hover {
+    transform: scale(1.02, 1.02);
+    transition: 0.7s;
+}
+
+main h2 {
+    color: #FE6A06;
+    font-weight: bolder;
+    font-size: 42px;
+    text-shadow: 0.01px 0.01px 0.1px #111111;
+}
+
+main p {
+    font-size: 10px;
+    color: #000000;
+}
+
+main>div {
+    flex-wrap: wrap;
+}
+/* Login */
+
+.areaLogin{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fe6906c2;
+    border-radius: 10px;
+width: 800px;
+height: 500px;
+padding: 30px;
+flex-wrap: wrap;
+max-width: 100%;
+}
+.login form{
+display: flex;
+width: 100%;
+flex-direction: column;
+}
+.login input{
+margin-top: 10px;
+color: #FE6A06;
+padding-left: 10px;
+border: none;
+height: 45px;
+outline: none;
+border-radius: 8px;
+}
+.login img{
+width:200px;
+height: auto;
+}
+input::placeholder{
+    color: #FE6A06;
+font-size: 14px;
+}
+form [type="submit"]{
+display: block;
+font-size: 18px;
+cursor: pointer;
+}
+form [type="submit"]:hover{
+    background-color: #FE6A06;
+    color: white;
+}
+p{
+
+    color: white;
+}
+a{
+margin-left: 10px;
+    text-decoration: none;
+}
+/* Footer */
+img {
+    max-width: 100%;
+    width: 100px;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.footer01 .icons {}
+
+.footer2 {
+    background-color: #000000;
+    max-width: 100%;
+}
+
+.footer2 p {
+    max-width: 100%;
+    text-align: center;
+}
+
+.footer-container {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+.footer01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.footer2 {
+    text-align: center;
+    background-color: rgb(243, 245, 246);
+    padding: 5px 0;
+    font-weight: bold;
+    color: rgb(5, 5, 5);
+}
+
+.content {
+    height: 100vh;
+}
+@media (max-width: 480px) {
+    .footer01 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        height: 10%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .icons {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    header {
+        max-height: 700px;
+        padding-bottom: 10px;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .nav ul li {
+        display: flex;
+        align-items: center;
+        max-height: 45px;
+
+    }
+
+    header nav ul a {
+        height: 40%;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header button {
+        text-align: end;
+        position: absolute;
+        top: 2px;
+        right: 30px;
+        font-size: 15px;
+    }
+    .footer2 {
+        max-width: 20px;
+    }
+
+    .areaLogin{
+         
+        display:flex;
+        height: 100%;
+        width:100%;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+}
